@@ -16,6 +16,7 @@ namespace Tasks
             int pos = 0;
             Process[] processes = Process.GetProcesses();
             List<Task> tasks = UpdateClass(processes);
+            Console.ForegroundColor = ConsoleColor.White;
             Console.SetCursorPosition(0, 0);
             Console.WriteLine("Task name");
             Console.SetCursorPosition(70, 0);
@@ -35,6 +36,8 @@ namespace Tasks
             }
             while (true)
             {
+                Console.ForegroundColor = ConsoleColor.White;
+
                 Console.SetCursorPosition(0, pos + 3);
                 Console.Write("   ");
                 Console.SetCursorPosition(0, pos + 2);
